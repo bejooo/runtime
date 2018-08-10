@@ -1,0 +1,19 @@
+runtimes:
+  go1.9.7:
+    dir: go
+    build_args: 
+      - GO_VERSION=1.9.7
+    build_packages:
+      - make
+  go1.10:
+    dir: go
+    build_args: 
+      - GO_VERSION=1.10
+  python2.7:
+    dir: python2
+    build_args: 
+      - PYTHON_VERSION=2.7
+  python3.4:
+    dir: python3
+    build_args: 
+      - PYTHON_VERSION=3.4
