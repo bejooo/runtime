@@ -4,7 +4,7 @@ ARG GO_VERSION=1.9.7
 ARG WATCHER_VERSION=0.1.0
 
 # Get fxwatcher - if fxwatcher is uploaded on github, remove this line.
-FROM ${REGISTRY}/fxwatcher:${WATCHER_VERSION}-go${GO_VERSION} as watcher
+FROM ${REGISTRY}/fxwatcher:${WATCHER_VERSION}-go as watcher
 
 # Function Build
 FROM golang:${GO_VERSION} as builder
